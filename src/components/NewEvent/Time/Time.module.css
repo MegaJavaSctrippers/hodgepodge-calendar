@@ -1,0 +1,14 @@
+.time {
+    width: 88px;
+    height: 48px;
+    border: 1px solid rgba(46, 46, 46, 0.2);
+    border-radius: 8px;
+    /* padding: 8px; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #2E2E2E;
+}

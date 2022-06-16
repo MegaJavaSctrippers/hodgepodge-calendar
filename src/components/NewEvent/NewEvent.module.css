@@ -28,6 +28,14 @@
     color: #2E2E2E;
 }
 
+.close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 16px;
+    height: 16px;
+}
+
 .label {
     margin-top: 16px;
     margin-bottom: 8px;
@@ -49,25 +57,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 8px;
 }
 
 .date_day {
     display: flex;
-    justify-content: space-around;
     width: 232px;
     height: 48px;
     border: 1px solid rgba(46, 46, 46, 0.2);
     border-radius: 8px;
     padding: 12px;
-}
-
-.start_time, .end_time {
-    width: 88px;
-    height: 48px;
-    border: 1px solid rgba(46, 46, 46, 0.2);
-    border-radius: 8px;
-    padding: 12px;
-    text-align: center;
 }
 
 .repeat {
@@ -76,7 +75,15 @@
     border: 1px solid rgba(46, 46, 46, 0.2);
     border-radius: 8px;
     padding: 12px;
-    text-align: center;
+    text-align: start;
+}
+
+.dropdownicon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 32px;
+    top: 190px;
 }
 
 .participants {
@@ -99,7 +106,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 580px;
+    right: 32px;
     top: 408px;
 }
 
@@ -128,7 +135,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 580px;
+    right: 32px;
     top: 498px;
 }
 
