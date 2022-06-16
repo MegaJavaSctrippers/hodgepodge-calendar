@@ -1,10 +1,10 @@
 import React from 'react'
-import NewEvent from './components/NewEvent/NewEvent'
+import Button from './components/Button/Button'
 
 function App() {
   return (
     <div className="App">
-      <NewEvent />
+      <Button />
     </div>
   )
 }
