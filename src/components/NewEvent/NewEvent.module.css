@@ -47,12 +47,26 @@
 }
 
 .label {
-    margin-top: 16px;
+    margin-top: 20px;
     margin-bottom: 8px;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: rgba(46, 46, 46, 0.5);
+}
+
+.attachment {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(46, 46, 46, 0.5);
+}
+
+.date_title {
+    display: flex;
+    justify-content: space-between;
 }
 
 .input {
@@ -61,63 +75,113 @@
     border: 1px solid rgba(46, 46, 46, 0.2);
     border-radius: 8px;
     padding: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2E2E2E;
 }
 
 .date_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 8px;
+    /* gap: 30px; */
+    font-size: 14px;
 }
 
 .date_day {
     display: flex;
-    width: 232px;
+    justify-content: space-evenly;
+    width: 180px;
     height: 48px;
     border: 1px solid rgba(46, 46, 46, 0.2);
     border-radius: 8px;
     padding: 12px;
 }
 
-.repeat {
-    width: 144px;
+.repeat_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.repeat, .reminder {
+    margin-top: 8px;
+    width: 180px;
     height: 48px;
     border: 1px solid rgba(46, 46, 46, 0.2);
     border-radius: 8px;
     padding: 12px;
     text-align: start;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: start;
+    color: rgba(46, 46, 46, 0.8);
 }
 
-.dropdownicon {
+.repeat_dropdown {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 180px;
+    top: 300px;
+}
+.reminder1_dropdown{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 380px;
+    top: 300px;
+}
+.reminder2_dropdown{
     position: absolute;
     width: 16px;
     height: 16px;
     right: 32px;
-    top: 190px;
+    top: 300px;
+}
+
+.user_room_wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .participants {
-    width: 584px;
-    height: 88px;
+    width: 288px;
+    height: 60px;
+    border: 1px solid rgba(46, 46, 46, 0.2);
+    border-radius: 8px;
+    padding: 8px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    color: #2E2E2E;
+}
+
+.room {
+    width: 288px;
+    height: 60px;
     border: 1px solid rgba(46, 46, 46, 0.2);
     border-radius: 8px;
     padding: 8px;
 }
 
-.dropdown {
-    width: 584px;
-    height: 48px;
-    border: 1px solid rgba(46, 46, 46, 0.2);
-    border-radius: 8px;
-    padding: 8px;
-}
-
-.dropdown_icon {
+.room_dropdown {
     position: absolute;
     width: 16px;
     height: 16px;
     right: 32px;
-    top: 408px;
+    top: 390px;
 }
 
 .calendar_permission {
@@ -131,6 +195,14 @@
     border: 1px solid rgba(46, 46, 46, 0.2);
     border-radius: 8px;
     padding: 12px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    color: #2E2E2E;
 }
 
 .permission_item {
@@ -139,6 +211,14 @@
     border: 1px solid rgba(46, 46, 46, 0.2);
     border-radius: 8px;
     padding: 12px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    color: #2E2E2E;
 }
 
 .down_icon {
