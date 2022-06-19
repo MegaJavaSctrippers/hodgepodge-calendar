@@ -1,0 +1,39 @@
+.form {
+
+}
+.formBlock{
+    margin-bottom: 8px;
+}
+.formBlock p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #2E2E2E;
+    opacity: 0.5;
+    margin-bottom: 8px;
+}
+.formBlock input {
+    width: 304px;
+    height: 40px;
+    color: #000;
+    border: 1px solid rgba(45, 30, 113, 0.1);
+    border-radius: 8px;
+    padding: 0 15px;
+}
+.saveBtn{
+    margin-top: 16px;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
