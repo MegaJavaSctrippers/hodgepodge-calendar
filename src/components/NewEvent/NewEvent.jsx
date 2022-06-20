@@ -7,7 +7,8 @@ import down from '../../assets/icons/down.svg'
 import Date from './Date/Date'
 import DayOfWeek from './DayOfWeek/DayOfWeek'
 import close from '../../assets/icons/closeIcon.png'
-import Time from './Time/Time'
+import StartTime from './StartTime/StartTime'
+import EndTime from './EndTime/EndTime'
 import Repeat from './Repeat/Repeat'
 import Reminder from './Reminder/Reminder'
 import Reminder2 from './Reminder2/Reminder2'
@@ -32,9 +33,8 @@ function NewEvent() {
                 <Date />
                 <DayOfWeek />
               </div>
-              <Time />
-              {/* <div className={s.hyphen}>-</div> */}
-              <Time />
+              <StartTime />
+              <EndTime />
             </div>
             <div className={s.repeat_wrapper}>
               <Repeat />
