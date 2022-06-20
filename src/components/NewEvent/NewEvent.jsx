@@ -8,6 +8,9 @@ import Date from './Date/Date'
 import DayOfWeek from './DayOfWeek/DayOfWeek'
 import close from '../../assets/icons/closeIcon.png'
 import Time from './Time/Time'
+import Repeat from './Repeat/Repeat'
+import Reminder from './Reminder/Reminder'
+import Reminder2 from './Reminder2/Reminder2'
 
 function NewEvent() {
   return (
@@ -21,7 +24,7 @@ function NewEvent() {
             <textarea className={s.input} />
             <p className={s.attachment}>Прикрепить файл</p>
             <div className={s.date_title}>
-              <p className={s.label}>Дата и время</p>
+              <div>Дата и время</div>
               <FormControlLabel control={<Switch />} label="Весь день" />
             </div>
             <div className={s.date_wrapper}>
@@ -34,12 +37,9 @@ function NewEvent() {
               <Time />
             </div>
             <div className={s.repeat_wrapper}>
-              <div className={s.repeat}>не повторять</div>
-              <img className={s.repeat_dropdown} src={down} alt="dropdown icon" />
-              <div className={s.reminder}>напоминание 1</div>
-              <img className={s.reminder1_dropdown} src={down} alt="dropdown icon" />
-              <div className={s.reminder}>напоминание 2</div>
-              <img className={s.reminder2_dropdown} src={down} alt="dropdown icon" />
+              <Repeat />
+              <Reminder />
+              <Reminder2 />
             </div>
             <div className={s.user_room_wrapper}>
               <div className={s.user_wrapper}>

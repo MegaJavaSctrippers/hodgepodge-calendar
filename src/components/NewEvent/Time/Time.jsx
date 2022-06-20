@@ -7,7 +7,7 @@ function Time() {
   const [selectedTime, setselectedTime] = useState(null)
   return (
     <TimePicker
-      // className={s.time}
+      className={s.time}
       renderInput={(params) => <TextField {...params} />}
       value={selectedTime}
       onChange={(newValue) => {

@@ -32,6 +32,8 @@
 }
 
 .title {
+    font-family: 'Inter';
+    font-style: normal;
     font-weight: 600;
     font-size: 19px;
     line-height: 23px;
@@ -47,6 +49,8 @@
 }
 
 .label {
+    font-family: 'Inter';
+    font-style: normal;
     margin-top: 20px;
     margin-bottom: 8px;
     font-weight: 300;
@@ -54,6 +58,7 @@
     line-height: 17px;
     color: rgba(46, 46, 46, 0.5);
 }
+
 
 .attachment {
     margin-top: 10px;
@@ -67,6 +72,13 @@
 .date_title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(46, 46, 46, 0.5);
 }
 
 .input {
@@ -88,23 +100,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 30px; */
+    gap: 10px;
     font-size: 14px;
+    font-family: 'Inter';
 }
 
 .date_day {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 180px;
     height: 48px;
     border: 1px solid rgba(46, 46, 46, 0.2);
     border-radius: 8px;
-    padding: 12px;
+    padding: 12px 20px;
 }
 
 .repeat_wrapper {
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
+    gap: 10px;
 }
 
 .repeat, .reminder {
@@ -123,28 +138,6 @@
     line-height: 18px;
     text-align: start;
     color: rgba(46, 46, 46, 0.8);
-}
-
-.repeat_dropdown {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    left: 180px;
-    top: 300px;
-}
-.reminder1_dropdown{
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    left: 380px;
-    top: 300px;
-}
-.reminder2_dropdown{
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    right: 32px;
-    top: 300px;
 }
 
 .user_room_wrapper {
