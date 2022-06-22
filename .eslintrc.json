@@ -97,7 +97,7 @@
           "printWidth": 100,
           "tabWidth": 2,
           "tabs": false,
-          "linebreak-style": 0,
+          "linebreak-style": 0
         }
       ]
     }
