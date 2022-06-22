@@ -96,8 +96,7 @@
           "trailingComma": "all",
           "printWidth": 100,
           "tabWidth": 2,
-          "tabs": false,
-          "linebreak-style": 0
+          "tabs": false
         }
       ]
     }
