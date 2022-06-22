@@ -34,6 +34,12 @@
     justify-content: center;
     text-transform: uppercase;
     cursor: pointer;
+    background-color: #345294;
 }
+
+.saveBtn:disabled {
+    background-color: #F0F0F0;
+}
+
 
 
