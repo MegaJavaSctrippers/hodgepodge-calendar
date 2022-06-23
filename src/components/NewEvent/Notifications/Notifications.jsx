@@ -10,17 +10,19 @@ function Notifications() {
         <div className={s.container}>
           <p className={s.title}>Уведомления</p>
           <CloseIcon className={s.close} />
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
+          <div className={s.notif_wrapper}>
+            <Notification />
+            <Notification />
+            <Notification />
+            <Notification />
+            <Notification />
+            <Notification />
+            <Notification />
+            <Notification />
+            <Notification />
+            <Notification />
+            <Notification />
+          </div>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import NewEvent from '../NewEvent/NewEvent'
 import EventRepeat from '../NewEvent/EventRepeat/EventRepeat'
 import Notifications from '../NewEvent/Notifications/Notifications'
+import Invites from '../NewEvent/Invites/Invites'
 import s from './Button.module.css'
 
 function Button() {
@@ -16,7 +17,7 @@ function Button() {
         Создать
       </button>
 
-      {modalNewEvent && <Notifications />}
+      {modalNewEvent && <Invites />}
     </div>
   )
 }
