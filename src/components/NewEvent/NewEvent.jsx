@@ -1,5 +1,4 @@
 import React from 'react'
-import { FormControlLabel, Switch } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
 import Icon from '@mui/material/Icon'
 import s from './NewEvent.module.css'
@@ -13,33 +12,21 @@ import Room from './Room/Room'
 import Permission from './Permission/Permission'
 import CalenderType from './CalenderType/CalenderType'
 import ImageAvatar from './ImageAvatar/ImageAvatar'
+import SwitchToggle from './SwitchToggle/SwitchToggle'
 
-function NewEvent(toggleModalNewEvent) {
+function NewEvent() {
   return (
     <div className={s.overlay}>
       <form className={s.new_event}>
         <div className={s.container}>
           <p className={s.title}>Новое событие</p>
-          <CloseIcon className={s.close} onClick={() => toggleModalNewEvent()} />
+          <CloseIcon className={s.close} />
           <p className={s.label}>Название</p>
           <textarea className={s.input} />
           <input className={s.attachment} type="file" name="file" multiple />
           <div className={s.date_title}>
             <div>Дата и время</div>
-            <FormControlLabel
-              className={s.switch}
-              control={<Switch />}
-              label="Рабочий день"
-              sx={{
-                '& .MuiTypography-root': {
-                  fontFamily: 'Inter',
-                  fontStyle: 'normal',
-                  fontWeight: 300,
-                  fontSize: 14,
-                  color: 'rgba(46, 46, 46, 0.5)',
-                },
-              }}
-            />
+            <SwitchToggle />
           </div>
           <div className={s.date_wrapper}>
             <DateNew />

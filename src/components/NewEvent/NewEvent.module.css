@@ -168,10 +168,6 @@
     gap: 20px;
 }
 
-.switch {
-    margin-right: 0;
-}
-
 .user_title {
     display: flex;
     justify-content: space-between;
