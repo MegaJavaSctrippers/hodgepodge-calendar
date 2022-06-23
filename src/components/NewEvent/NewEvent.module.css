@@ -23,8 +23,8 @@
     top: 46px;
     background: #FFFFFF;
     box-shadow: 0px 2px 25px rgba(136, 136, 136, 0.35);
-    border-radius: 8px;
-    font-family: Inter;
+    border-radius: 4px;
+    font-family: 'Inter';
 }
 
 .container {
@@ -46,12 +46,13 @@
     right: 24px;
     width: 16px;
     height: 16px;
+    cursor: pointer;
 }
 
 .label {
     font-family: 'Inter';
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 12px;
     margin-bottom: 8px;
     font-weight: 300;
     font-size: 14px;
@@ -63,6 +64,7 @@
 .attachment {
     margin-top: 10px;
     margin-bottom: 8px;
+    font-family: 'Inter';
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -85,7 +87,7 @@
     width: 584px;
     height: 48px;
     border: 1px solid rgba(46, 46, 46, 0.2);
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px;
 
     font-family: 'Inter';
@@ -103,16 +105,7 @@
     gap: 10px;
     font-size: 14px;
     font-family: 'Inter';
-}
-
-.date_day {
-    display: flex;
-    justify-content: space-around;
-    width: 180px;
-    height: 48px;
-    border: 1px solid rgba(46, 46, 46, 0.2);
-    border-radius: 8px;
-    padding: 12px 20px;
+    margin-top: 10px;
 }
 
 .repeat_wrapper {
@@ -122,24 +115,6 @@
     gap: 10px;
 }
 
-.repeat, .reminder {
-    margin-top: 8px;
-    width: 180px;
-    height: 48px;
-    border: 1px solid rgba(46, 46, 46, 0.2);
-    border-radius: 8px;
-    padding: 12px;
-    text-align: start;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: start;
-    color: rgba(46, 46, 46, 0.8);
-}
-
 .user_room_wrapper {
     display: flex;
     justify-content: space-between;
@@ -147,9 +122,9 @@
 
 .participants {
     width: 288px;
-    height: 60px;
+    height: 56px;
     border: 1px solid rgba(46, 46, 46, 0.2);
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 8px;
 
     font-family: 'Inter';
@@ -157,69 +132,15 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    align-items: center;
     color: #2E2E2E;
-}
 
-.room {
-    width: 288px;
-    height: 60px;
-    border: 1px solid rgba(46, 46, 46, 0.2);
-    border-radius: 8px;
-    padding: 8px;
-}
-
-.room_dropdown {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    right: 32px;
-    top: 390px;
+    display: flex;
+    gap: 5px;
 }
 
 .calendar_permission {
     display: flex;
     justify-content: space-between;
-}
-
-.calendar_item {
-    width: 288px;
-    height: 48px;
-    border: 1px solid rgba(46, 46, 46, 0.2);
-    border-radius: 8px;
-    padding: 12px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    align-items: center;
-    color: #2E2E2E;
-}
-
-.permission_item {
-    width: 288px;
-    height: 48px;
-    border: 1px solid rgba(46, 46, 46, 0.2);
-    border-radius: 8px;
-    padding: 12px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    align-items: center;
-    color: #2E2E2E;
-}
-
-.down_icon {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    right: 32px;
-    top: 498px;
 }
 
 .btn {
@@ -239,4 +160,33 @@
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+.attachment_wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.switch {
+    margin-right: 0;
+}
+
+.user_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plus_icon {
+    cursor: pointer;
+}
+
+.author {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(46, 46, 46, 0.5);
 }

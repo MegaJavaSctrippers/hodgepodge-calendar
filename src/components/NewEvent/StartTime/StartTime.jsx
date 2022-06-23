@@ -14,6 +14,7 @@ function StartTime() {
         onChange={(newValue) => {
           setselectedTime(newValue)
         }}
+        ampm={false}
       />
     </LocalizationProvider>
   )

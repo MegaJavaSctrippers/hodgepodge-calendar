@@ -1,35 +1,48 @@
 import React from 'react'
 import { FormControlLabel, Switch } from '@mui/material'
+import CloseIcon from '@mui/icons-material/Close'
+import Icon from '@mui/material/Icon'
 import s from './NewEvent.module.css'
-import down from '../../assets/icons/down.svg'
 import DateNew from './Date/DateNew'
-// import DayOfWeek from './DayOfWeek/DayOfWeek'
-import close from '../../assets/icons/closeIcon.png'
 import StartTime from './StartTime/StartTime'
 import EndTime from './EndTime/EndTime'
 import Repeat from './Repeat/Repeat'
 import Reminder from './Reminder/Reminder'
 import Reminder2 from './Reminder2/Reminder2'
+import Room from './Room/Room'
+import Permission from './Permission/Permission'
+import CalenderType from './CalenderType/CalenderType'
+import ImageAvatar from './ImageAvatar/ImageAvatar'
 
-function NewEvent() {
+function NewEvent(toggleModalNewEvent) {
   return (
     <div className={s.overlay}>
       <form className={s.new_event}>
         <div className={s.container}>
           <p className={s.title}>Новое событие</p>
-          <img className={s.close} src={close} alt="close icon" />
+          <CloseIcon className={s.close} onClick={() => toggleModalNewEvent()} />
           <p className={s.label}>Название</p>
           <textarea className={s.input} />
-          <p className={s.attachment}>Прикрепить файл</p>
+          <input className={s.attachment} type="file" name="file" multiple />
           <div className={s.date_title}>
             <div>Дата и время</div>
-            <FormControlLabel control={<Switch />} label="Весь день" />
+            <FormControlLabel
+              className={s.switch}
+              control={<Switch />}
+              label="Рабочий день"
+              sx={{
+                '& .MuiTypography-root': {
+                  fontFamily: 'Inter',
+                  fontStyle: 'normal',
+                  fontWeight: 300,
+                  fontSize: 14,
+                  color: 'rgba(46, 46, 46, 0.5)',
+                },
+              }}
+            />
           </div>
           <div className={s.date_wrapper}>
-            {/* <div className={s.date_day}> */}
             <DateNew />
-            {/* <DayOfWeek /> */}
-            {/* </div> */}
             <StartTime />
             <EndTime />
           </div>
@@ -40,25 +53,33 @@ function NewEvent() {
           </div>
           <div className={s.user_room_wrapper}>
             <div className={s.user_wrapper}>
-              <p className={s.label}>Участники(1)</p>
-              <div className={s.participants}>Jenny</div>
+              <div className={s.user_title}>
+                <p className={s.label}>Участники(1)</p>
+                <Icon className={s.plus_icon} color="primary">
+                  add_circle
+                </Icon>
+              </div>
+              <div className={s.participants}>
+                <ImageAvatar />
+                <div>
+                  <p>Jenny Wilson</p>
+                  <p className={s.author}>автор</p>
+                </div>
+              </div>
             </div>
             <div className={s.room_wrapper}>
               <p className={s.label}>Помещение</p>
-              <div className={s.room}>
-                <img className={s.room_dropdown} src={down} alt="dropdown icon" />
-              </div>
+              <Room />
             </div>
           </div>
           <div className={s.calendar_permission}>
             <div className={s.calendar}>
-              <p className={s.label}>Календарь</p>
-              <div className={s.calendar_item}>Рабочий</div>
+              <p className={s.label}>Тип встречи</p>
+              <CalenderType />
             </div>
             <div className={s.permission}>
               <p className={s.label}>Разрешение на доступ к мероприятию</p>
-              <div className={s.permission_item}>Общедоступное</div>
-              <img className={s.down_icon} src={down} alt="dropdown icon" />
+              <Permission />
             </div>
           </div>
           <button className={s.btn} type="button">
