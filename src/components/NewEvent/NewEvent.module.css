@@ -174,10 +174,6 @@
     align-items: center;
 }
 
-.plus_icon {
-    cursor: pointer;
-}
-
 .author {
     font-family: 'Inter';
     font-style: normal;

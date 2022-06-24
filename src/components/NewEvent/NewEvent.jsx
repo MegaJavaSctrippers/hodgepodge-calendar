@@ -1,6 +1,5 @@
 import React from 'react'
 import CloseIcon from '@mui/icons-material/Close'
-import Icon from '@mui/material/Icon'
 import s from './NewEvent.module.css'
 import DateNew from './Date/DateNew'
 import StartTime from './StartTime/StartTime'
@@ -13,6 +12,7 @@ import Permission from './Permission/Permission'
 import CalenderType from './CalenderType/CalenderType'
 import ImageAvatar from './ImageAvatar/ImageAvatar'
 import SwitchToggle from './SwitchToggle/SwitchToggle'
+import AddParticipant from './AddParticipant/AddParticipant'
 
 function NewEvent() {
   return (
@@ -42,9 +42,7 @@ function NewEvent() {
             <div className={s.user_wrapper}>
               <div className={s.user_title}>
                 <p className={s.label}>Участники(1)</p>
-                <Icon className={s.plus_icon} color="primary">
-                  add_circle
-                </Icon>
+                <AddParticipant />
               </div>
               <div className={s.participants}>
                 <ImageAvatar />

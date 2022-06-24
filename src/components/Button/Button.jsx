@@ -17,7 +17,7 @@ function Button() {
         Создать
       </button>
 
-      {modalNewEvent && <Invites />}
+      {modalNewEvent && <NewEvent />}
     </div>
   )
 }
