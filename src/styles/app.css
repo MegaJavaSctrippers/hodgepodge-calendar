@@ -1,1 +1,31 @@
 @import "_nulleble.css";
+
+.grid_container {
+    display: grid;
+    max-width: 1440px;
+    grid-template-rows: 48px 1fr;
+    grid-template-columns: 1fr 10fr;
+    grid-template-areas:
+    "header header header"
+    "sidebar time_body time_body";
+    /*overflow: hidden;*/
+}
+
+
+.header {
+    grid-area: header;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, .4);
+}
+
+.sidebar{
+    width: 200px;
+    height: 577px;
+    grid-area: sidebar;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, .4);
+}
+
+.time_body {
+    margin: 24px 0 0 24px;
+    grid-area: time_body;
+    width: 1120px;
+}

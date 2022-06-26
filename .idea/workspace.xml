@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11f251a0-fa29-4bd9-9e22-41c92cf9373f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logo/Logo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logo/Logo.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_nulleble.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_nulleble.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -43,6 +53,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\megalab-calendar\src\components\UI\Button" />
+      <recent name="C:\Users\user\Desktop\megalab-calendar\src\components\Sidebar" />
+      <recent name="C:\Users\user\Desktop\megalab-calendar\src\components\Register" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,7 +73,7 @@
       <workItem from="1655562790952" duration="534000" />
       <workItem from="1655628869496" duration="9007000" />
       <workItem from="1655638011603" duration="16782000" />
-      <workItem from="1656082636275" duration="1280000" />
+      <workItem from="1656082636275" duration="11864000" />
     </task>
     <servers />
   </component>
