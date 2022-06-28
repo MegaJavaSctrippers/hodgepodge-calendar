@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FormControlLabel, Switch } from '@mui/material'
 
 export default function SwitchToggle() {
+  const [checked, setChecked] = useState(false)
+  const handleChange = () => {
+    setChecked(!checked)
+  }
   return (
     <FormControlLabel
-      control={<Switch />}
+      control={<Switch onChange={handleChange} />}
       label="Рабочий день"
       sx={{
+        marginRight: 0,
         '& .MuiTypography-root': {
           fontFamily: 'Inter',
           fontStyle: 'normal',

@@ -6,7 +6,7 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker'
 import { ru } from 'date-fns/locale'
 
 export default function BasicDatePicker() {
-  const [value, setValue] = React.useState(null)
+  const [value, setValue] = React.useState(new Date())
 
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns} locale={ru}>

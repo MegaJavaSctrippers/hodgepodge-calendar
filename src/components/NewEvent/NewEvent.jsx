@@ -1,5 +1,6 @@
 import React from 'react'
 import CloseIcon from '@mui/icons-material/Close'
+import PropTypes from 'prop-types'
 import s from './NewEvent.module.css'
 import DateNew from './Date/DateNew'
 import StartTime from './StartTime/StartTime'
@@ -14,19 +15,23 @@ import ImageAvatar from './ImageAvatar/ImageAvatar'
 import SwitchToggle from './SwitchToggle/SwitchToggle'
 import AddParticipant from './AddParticipant/AddParticipant'
 
-function NewEvent() {
+function NewEvent({ toggleModalNewEvent }) {
+  NewEvent.propTypes = {
+    toggleModalNewEvent: PropTypes.func.isRequired,
+  }
+
   return (
     <div className={s.overlay}>
       <form className={s.new_event}>
         <div className={s.container}>
           <p className={s.title}>Новое событие</p>
-          <CloseIcon className={s.close} />
+          <CloseIcon className={s.close} onClick={toggleModalNewEvent} />
           <p className={s.label}>Название</p>
           <textarea className={s.input} />
           <input className={s.attachment} type="file" name="file" multiple />
           <div className={s.date_title}>
             <div>Дата и время</div>
-            <SwitchToggle />
+            {/* <SwitchToggle /> */}
           </div>
           <div className={s.date_wrapper}>
             <DateNew />

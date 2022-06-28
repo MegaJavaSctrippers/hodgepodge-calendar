@@ -17,7 +17,7 @@ function Button() {
         Создать
       </button>
 
-      {modalNewEvent && <NewEvent />}
+      {modalNewEvent && <NewEvent toggleModalNewEvent={toggleModalNewEvent} />}
     </div>
   )
 }

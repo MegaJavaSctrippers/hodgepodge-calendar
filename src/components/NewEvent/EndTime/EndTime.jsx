@@ -4,7 +4,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
 import { TextField } from '@mui/material'
 
 function StartTime() {
-  const [selectedTime, setselectedTime] = useState(null)
+  const [selectedTime, setselectedTime] = useState(new Date())
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <TimePicker
