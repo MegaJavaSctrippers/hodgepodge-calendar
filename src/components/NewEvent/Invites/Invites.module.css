@@ -75,16 +75,6 @@
     padding: 10px 20px;
 }
 
-.participants_wrapper {
-    display: flex;
-    gap: 8px;
-    padding: 20px;
-}
-
-.participants_badge {
-    cursor: pointer;
-}
-
 .btn {
     position: absolute;
     right: 24px;

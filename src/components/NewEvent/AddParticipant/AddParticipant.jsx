@@ -16,7 +16,7 @@ function AddParticipant() {
         add_circle
       </Icon>
 
-      {active && <Invites />}
+      {active && <Invites handleClick={handleClick} />}
     </div>
   )
 }

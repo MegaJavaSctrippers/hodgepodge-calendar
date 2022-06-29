@@ -1,0 +1,9 @@
+.participants_wrapper {
+    display: flex;
+    gap: 8px;
+    padding: 20px;
+}
+
+.participants_badge {
+    cursor: pointer;
+}
