@@ -1,0 +1,8 @@
+.MyIconButton{
+    border: 1px solid rgba(46, 46, 46, 0.2);
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    padding: 9px;
+    cursor: pointer;
+}
