@@ -1,6 +1,7 @@
-import * as React from 'react'
+import React, { useState } from 'react'
 import TextField from '@mui/material/TextField'
 import Autocomplete from '@mui/material/Autocomplete'
+import EventRepeat from '../EventRepeat/EventRepeat'
 
 const repeatList = [
   { label: 'Не повторять', id: 1 },
@@ -12,13 +13,26 @@ const repeatList = [
 ]
 
 export default function Repeat() {
+  const [value, setValue] = useState(repeatList[0])
+  const [open, setOpen] = useState(true)
+  const closeFunc = () => {
+    setOpen(!open)
+  }
+
   return (
-    <Autocomplete
-      disablePortal
-      id="repeat"
-      options={repeatList}
-      sx={{ width: 200 }}
-      renderInput={(params) => <TextField {...params} label="Повтор" />}
-    />
+    <div>
+      <Autocomplete
+        disablePortal
+        id="repeat"
+        options={repeatList}
+        sx={{ width: 200 }}
+        renderInput={(params) => <TextField {...params} label="Повтор" />}
+        value={value}
+        onChange={(event, newValue) => setValue(newValue)}
+      />
+      {value.id === repeatList[repeatList.length - 1].id && open && (
+        <EventRepeat closeFunc={closeFunc} />
+      )}
+    </div>
   )
 }

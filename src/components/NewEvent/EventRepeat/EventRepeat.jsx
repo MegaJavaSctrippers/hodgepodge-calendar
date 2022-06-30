@@ -1,14 +1,20 @@
-import classNames from 'classnames'
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import RepeatDays from './RepeatDays/RepeatDays'
 import EndItems from './EndItems/EndItems'
 import s from './EventRepeat.module.css'
 
-function EventRepeat() {
+function EventRepeat({ closeFunc }) {
+  EventRepeat.propTypes = {
+    closeFunc: PropTypes.func.isRequired,
+  }
+
   const [repeat, setRepeat] = useState('день')
   const handleChange = (event) => {
     setRepeat(event.target.value)
   }
+
   return (
     <div className={s.overlay}>
       <form className={s.event_repeat}>
@@ -30,8 +36,12 @@ function EventRepeat() {
           <EndItems />
           <input className={classNames(s.item, s.date)} type="date" />
           <div className={s.ready_wrapper}>
-            <p className={classNames(s.subtitle, s.cancel)}>Отмена</p>
-            <p className={s.ready}>Готово</p>
+            <button className={classNames(s.subtitle, s.cancel)} type="button" onClick={closeFunc}>
+              Отмена
+            </button>
+            <button className={s.ready} type="button">
+              Готово
+            </button>
           </div>
         </div>
       </form>
