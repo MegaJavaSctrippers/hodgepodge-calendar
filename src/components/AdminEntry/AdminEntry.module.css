@@ -115,3 +115,13 @@
     top: 200px;
     right: 200px;
 }
+
+.error {
+    height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: red;
+}
