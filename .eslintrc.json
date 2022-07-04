@@ -34,6 +34,8 @@
       }
     },
     "rules": {
+      "linebreak-style": ["error", "windows"],
+      // javascript
       "semi": 0,
       "camelcase": 1,
       "no-console": [
@@ -92,7 +94,8 @@
           "trailingComma": "all",
           "printWidth": 100,
           "tabWidth": 2,
-          "tabs": false
+          "tabs": false,
+          "endOfLine": "auto"
         }
       ]
     }

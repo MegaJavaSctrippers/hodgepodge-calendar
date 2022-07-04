@@ -2,15 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11f251a0-fa29-4bd9-9e22-41c92cf9373f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Label/Label.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Label/Label.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/Search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/closeIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/Jenny.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button/Button.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/AddParticipant/AddParticipant.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/AddParticipant/AddParticipant.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/CalenderType/CalenderType.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Date/Date.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Date/Date.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Date/DateNew.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/DayOfWeek/DayOfWeek.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/DayOfWeek/DayOfWeek.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/EndTime/EndTime.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/EndTime/EndTime.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EndItems/EndItems.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EndItems/EndItems.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EventRepeat.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EventRepeat.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/RepeatDays/RepeatDays.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/RepeatDays/RepeatDays.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/FileUpload/FileUpload.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/ImageAvatar/ImageAvatar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/ImageAvatar/ImageAvatar.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Invites/AvatarRow/AvatarRow.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Invites/AvatarRow/AvatarRow.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Invites/Invite/Invite.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Invites/Invite/Invite.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Invites/Invites.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Invites/Invites.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/NewEvent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/NewEvent.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Notifications/Notification/Notification.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Notifications/Notification/Notification.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Notifications/Notifications.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Notifications/Notifications.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Permission/Permission.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Reminder/Reminder.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Reminder/Reminder.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Reminder2/Reminder2.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Reminder2/Reminder2.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Repeat/Repeat.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Repeat/Repeat.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/Room/Room.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/StartTime/StartTime.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/StartTime/StartTime.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/SwitchToggle/SwitchToggle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/SwitchToggle/SwitchToggle.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomCalendar/CustomCalendar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DayPicker/DayPicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DayPicker/DayPicker.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/Form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/RightBlock/RightBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/RightBlock/RightBlock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderDate/HeaderDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderDate/HeaderDate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Label/Label.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Label/Label.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/Logo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyCalendar/MyCalendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyCalendar/MyCalendar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register/Register.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/MyIconButton/MyIconButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/MyIconButton/MyIconButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/regexp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/regexp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RegisterPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +91,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/App.js" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2AkmrpTSk92yX4U4Nk3JUvfZHAy" />
   <component name="ProjectViewState">
@@ -39,6 +108,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+    "eslint.code.style.apply.dismiss": "true",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,7 +141,9 @@
       <workItem from="1656291816412" duration="1582000" />
       <workItem from="1656298727524" duration="11967000" />
       <workItem from="1656527526285" duration="1331000" />
-      <workItem from="1656911646789" duration="4047000" />
+      <workItem from="1656911646789" duration="7088000" />
+      <workItem from="1656929759579" duration="859000" />
+      <workItem from="1656930807862" duration="2915000" />
     </task>
     <servers />
   </component>
