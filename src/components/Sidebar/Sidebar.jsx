@@ -1,12 +1,14 @@
 import React from 'react'
 import Button from '../UI/Button/Button'
-import CustomCalendar from '../CustomCalendar/CustomCalendar'
+import MyCalendar from '../MyCalendar/MyCalendar'
+import Label from '../Label/Label'
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <Button>Создать</Button>
-      <CustomCalendar />
+      <MyCalendar />
+      <Label />
     </div>
   )
 }

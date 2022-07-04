@@ -34,7 +34,6 @@
       }
     },
     "rules": {
-      // javascript
       "semi": 0,
       "camelcase": 1,
       "no-console": [
@@ -51,7 +50,6 @@
       "no-param-reassign": [2, { "props": false }],
       "object-curly-newline": "off",
       "no-unused-vars": 1,
-      // react
       "react-hooks/exhaustive-deps": 0,
       "react/destructuring-assignment": 0,
       "react/jsx-props-no-spreading": 0,
@@ -76,7 +74,6 @@
       ],
       "react/jsx-no-bind": "off",
       "react/state-in-constructor": 0,
-      // imports
       "import/no-extraneous-dependencies": 0,
       "import/prefer-default-export": 0,
       "import/extensions": [
@@ -87,7 +84,6 @@
           "jsx": "never"
         }
       ],
-      // prettier
       "prettier/prettier": [
         "error",
         {
