@@ -15,7 +15,7 @@ const repeatList = [
 export default function Repeat() {
   const [value, setValue] = useState(repeatList[0])
   const [open, setOpen] = useState(true)
-  const closeFunc = () => {
+  const close = () => {
     setOpen(!open)
   }
 
@@ -28,11 +28,12 @@ export default function Repeat() {
         sx={{ width: 200 }}
         renderInput={(params) => <TextField {...params} label="Повтор" />}
         value={value}
-        onChange={(event, newValue) => setValue(newValue)}
+        onChange={(event, newValue) => {
+          setValue(newValue)
+          setOpen(true)
+        }}
       />
-      {value.id === repeatList[repeatList.length - 1].id && open && (
-        <EventRepeat closeFunc={closeFunc} />
-      )}
+      {value.id === repeatList[repeatList.length - 1].id && open && <EventRepeat close={close} />}
     </div>
   )
 }
