@@ -8,7 +8,7 @@ function EventRepeatDays() {
   return (
     <div className={s.repeat_days}>
       {days.map((day) => (
-        <DayOfWeek day={day} key="{day}" />
+        <DayOfWeek day={day} key={day} />
       ))}
     </div>
   )
