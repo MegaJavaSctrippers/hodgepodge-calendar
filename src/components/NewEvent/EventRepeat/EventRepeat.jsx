@@ -15,6 +15,12 @@ function EventRepeat({ close }) {
     setRepeat(event.target.value)
   }
 
+  const options = [
+    { value: 'дней', id: 1 },
+    { value: 'недель', id: 2 },
+    { value: 'месяцев', id: 3 },
+    { value: 'лет', id: 4 },
+  ]
   return (
     <div className={s.overlay}>
       <form className={s.event_repeat}>
@@ -24,10 +30,9 @@ function EventRepeat({ close }) {
             <p className={s.subtitle}>Повторять с интервалом</p>
             <input className={s.item} type="number" min={1} max={100} placeholder="1" />
             <select className={s.item} value={repeat} onChange={pickDay}>
-              <option value="day">дней</option>
-              <option value="week">недель</option>
-              <option value="months">месяцев</option>
-              <option value="year">лет</option>
+              {options.map((option) => (
+                <option>{option}</option>
+              ))}
             </select>
           </div>
           <p className={s.subtitle}>Дни повторения</p>
