@@ -31,7 +31,7 @@ function EventRepeat({ close }) {
             <input className={s.item} type="number" min={1} max={100} placeholder="1" />
             <select className={s.item} value={repeat} onChange={pickDay}>
               {options.map((option) => (
-                <option>{option}</option>
+                <option key="{option.id}">{option.value}</option>
               ))}
             </select>
           </div>
