@@ -3,12 +3,12 @@ import { FormControlLabel, Switch } from '@mui/material'
 
 export default function SwitchToggle() {
   const [checked, setChecked] = useState(false)
-  const handleChange = () => {
+  const setWorkHours = () => {
     setChecked(!checked)
   }
   return (
     <FormControlLabel
-      control={<Switch onChange={handleChange} />}
+      control={<Switch onChange={setWorkHours} />}
       label="Рабочий день"
       sx={{
         marginRight: 0,
