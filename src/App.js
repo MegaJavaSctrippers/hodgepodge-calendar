@@ -9,12 +9,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Button />
-        {/* <Routes>
+        {/* <Button /> */}
+        <Routes>
           <Route path="/admin-entry" element={<AdminEntry />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/calendar-admin" element={<CalendarAdmin />} />
-        </Routes> */}
+        </Routes>
       </div>
     </BrowserRouter>
   )
