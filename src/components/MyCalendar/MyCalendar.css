@@ -1,0 +1,73 @@
+.MyCalendar {
+  width: 180px;
+  height: 180px;
+  margin: 16px 0 0 10px;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.react-calendar__navigation__arrow{
+  font-size: 35px;
+  transform: translateY(-4px);
+}
+
+.react-calendar__navigation button {
+  color: #6f48eb;
+  min-width: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.react-calendar__navigation button span {
+  font-size: 16px;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  text-align: center;
+}
+
+abbr[title] {
+  text-decoration: none;
+  color: #9c9d9f;
+}
+
+.react-calendar__tile {
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-calendar__tile--now {
+  width: 20px;
+  height: 20px;
+  background: rgba(75, 132, 244, 0.8);
+  border-radius: 6px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-calendar__navigation__label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  opacity: 0.3;
+}
