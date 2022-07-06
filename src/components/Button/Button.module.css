@@ -16,10 +16,10 @@
     text-align: center;
     color: #4B84F4;
     cursor: pointer;
-    transition: all 0.3s;
 }
 
 .btn:hover {
     background-color: #4B84F4;
     color: white;
+    transition: all 0.3s;
 }

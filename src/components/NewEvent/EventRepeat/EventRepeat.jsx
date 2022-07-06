@@ -1,14 +1,26 @@
-import classNames from 'classnames'
 import React, { useState } from 'react'
-import RepeatDays from './RepeatDays/RepeatDays'
-import EndItems from './EndItems/EndItems'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
+import EventRepeatDays from './EventRepeatDays/EventRepeatDays'
+import EndOfRepeat from './EndOfRepeat/EndOfRepeat'
 import s from './EventRepeat.module.css'
 
-function EventRepeat() {
+function EventRepeat({ close }) {
+  EventRepeat.propTypes = {
+    close: PropTypes.func.isRequired,
+  }
+
   const [repeat, setRepeat] = useState('день')
-  const handleChange = (event) => {
+  const pickDay = (event) => {
     setRepeat(event.target.value)
   }
+
+  const options = [
+    { value: 'дней', id: 1 },
+    { value: 'недель', id: 2 },
+    { value: 'месяцев', id: 3 },
+    { value: 'лет', id: 4 },
+  ]
   return (
     <div className={s.overlay}>
       <form className={s.event_repeat}>
@@ -17,21 +29,24 @@ function EventRepeat() {
           <div className={s.subtitle_wrapper}>
             <p className={s.subtitle}>Повторять с интервалом</p>
             <input className={s.item} type="number" min={1} max={100} placeholder="1" />
-            <select className={s.item} value={repeat} onChange={handleChange}>
-              <option value="day">дней</option>
-              <option value="week">недель</option>
-              <option value="months">месяцев</option>
-              <option value="year">лет</option>
+            <select className={s.item} value={repeat} onChange={pickDay}>
+              {options.map((option) => (
+                <option key={option.id}>{option.value}</option>
+              ))}
             </select>
           </div>
           <p className={s.subtitle}>Дни повторения</p>
-          <RepeatDays />
+          <EventRepeatDays />
           <p className={classNames(s.subtitle, s.end)}>Окончание</p>
-          <EndItems />
+          <EndOfRepeat />
           <input className={classNames(s.item, s.date)} type="date" />
           <div className={s.ready_wrapper}>
-            <p className={classNames(s.subtitle, s.cancel)}>Отмена</p>
-            <p className={s.ready}>Готово</p>
+            <button className={classNames(s.subtitle, s.cancel)} type="button" onClick={close}>
+              Отмена
+            </button>
+            <button className={s.ready} type="button">
+              Готово
+            </button>
           </div>
         </div>
       </form>
