@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import Dropdown from './Dropdown/Dropdown'
-import s from './CreateButton.module.css'
+import s from './CreateLocationButton.module.css'
 
-export default function CreateButton() {
+export default function CreateLocationButton() {
   const [active, setActive] = useState(false)
   const openDropdown = () => {
     setActive(!active)
@@ -13,8 +12,6 @@ export default function CreateButton() {
       <button className={s.btn} type="button" onClick={openDropdown}>
         + Создать
       </button>
-
-      {active && <Dropdown setActive={setActive} active={active} />}
     </div>
   )
 }

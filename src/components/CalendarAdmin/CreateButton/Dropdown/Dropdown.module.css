@@ -25,5 +25,7 @@
 }
 
 .dropdownItem:hover {
-    background-color: #f4f4f4;
+    background: rgba(0, 47, 97, 0.12);
+    border-radius: 8px;
+    transition: all 0.3s;
 }

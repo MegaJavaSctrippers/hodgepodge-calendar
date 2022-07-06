@@ -2,10 +2,10 @@ import React from 'react'
 import { TextField, Autocomplete } from '@mui/material'
 
 const Organizationlist = [
-  { label: 'Организация', id: 1 },
-  { label: 'Личный', id: 2 },
-  { label: 'Мероприятия', id: 3 },
-  { label: 'Проекты', id: 4 },
+  { label: 'Организация1', id: 1 },
+  { label: 'Организация2', id: 2 },
+  { label: 'Организация3', id: 3 },
+  { label: 'Организация4', id: 4 },
 ]
 
 export default function Organization() {

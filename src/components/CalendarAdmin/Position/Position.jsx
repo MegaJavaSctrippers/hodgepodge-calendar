@@ -3,10 +3,10 @@ import TextField from '@mui/material/TextField'
 import Autocomplete from '@mui/material/Autocomplete'
 
 const Positionlist = [
-  { label: 'Должность', id: 1 },
-  { label: 'Личный', id: 2 },
-  { label: 'Мероприятия', id: 3 },
-  { label: 'Проекты', id: 4 },
+  { label: 'Должность1', id: 1 },
+  { label: 'Должность2', id: 2 },
+  { label: 'Должность3', id: 3 },
+  { label: 'Должность4', id: 4 },
 ]
 
 export default function Position() {

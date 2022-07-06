@@ -1,16 +1,35 @@
-import React from 'react'
-import SearchIcon from '@mui/icons-material/Search'
+import React, { useState } from 'react'
+import classNames from 'classnames'
 import calendarIcon from '../../assets/icons/Calendaradmin.svg'
-import s from './CalendarAdmin.module.css'
-import Organization from './Organization/Organization'
-import Department from './Department/Department'
-import Position from './Position/Position'
 import orgIcon from '../../assets/icons/Organization.svg'
-import profile from '../../assets/icons/Profile.svg'
+import user from '../../assets/icons/Profile.svg'
 import location from '../../assets/icons/Location.svg'
-import CreateButton from './CreateButton/CreateButton'
+import TopBarOrganization from './TopBarOrganization/TopBarOrganization'
+import TopBarUser from './TopBarUser/TopBarUser'
+import TopBarLocation from './TopBarLocation/TopBarLocation'
+import s from './CalendarAdmin.module.css'
 
 export default function CalendarAdmin() {
+  const [activeOrg, setActiveOrg] = useState(false)
+  const [activeUser, setActiveUser] = useState(false)
+  const [activeLocation, setActiveLocation] = useState(false)
+
+  const showOrganizationBar = () => {
+    setActiveOrg(!activeOrg)
+    setActiveUser(false)
+    setActiveLocation(false)
+  }
+  const showUserBar = () => {
+    setActiveUser(!activeUser)
+    setActiveOrg(false)
+    setActiveLocation(false)
+  }
+  const showLocationBar = () => {
+    setActiveLocation(!activeLocation)
+    setActiveOrg(false)
+    setActiveUser(false)
+  }
+
   return (
     <div className={s.container}>
       <div className={s.wrapper}>
@@ -18,29 +37,35 @@ export default function CalendarAdmin() {
           <img className={s.calendarIcon} src={calendarIcon} alt="calendarIcon" />
           CalendarAdmin
         </div>
-        <div className={s.topBar}>
-          <Organization />
-          <Department />
-          <Position />
-          <div className={s.iconWrapper}>
-            <SearchIcon />
-          </div>
-          <CreateButton />
-        </div>
+        {activeOrg && <TopBarOrganization />}
+        {activeUser && <TopBarUser />}
+        {activeLocation && <TopBarLocation />}
       </div>
       <aside className={s.aside}>
-        <div className={s.aside_item}>
+        <button
+          className={classNames(s.aside_item, { [s.active]: activeOrg })}
+          type="button"
+          onClick={showOrganizationBar}
+        >
           <img src={orgIcon} alt="organization-icon" />
           <p>Организация</p>
-        </div>
-        <div className={s.aside_item}>
-          <img src={profile} alt="organization-icon" />
+        </button>
+        <button
+          className={classNames(s.aside_item, { [s.active]: activeUser })}
+          type="button"
+          onClick={showUserBar}
+        >
+          <img src={user} alt="user-icon" />
           <p>Пользователи</p>
-        </div>
-        <div className={s.aside_item}>
-          <img src={location} alt="organization-icon" />
+        </button>
+        <button
+          className={classNames(s.aside_item, { [s.active]: activeLocation })}
+          type="button"
+          onClick={showLocationBar}
+        >
+          <img src={location} alt="location-icon" />
           <p>Помещения</p>
-        </div>
+        </button>
       </aside>
     </div>
   )

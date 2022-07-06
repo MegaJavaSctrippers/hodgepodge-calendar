@@ -73,6 +73,8 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    background-color: #FFFFFF;
+    border: none;
     padding: 8px 54px 8px 12px;
     margin-bottom: 8px;
 
@@ -91,4 +93,9 @@ body {
     background: rgba(0, 47, 97, 0.12);
     border-radius: 8px;
     transition: all 0.3s;
+}
+
+.active {
+    background: rgba(0, 47, 97, 0.12);
+    border-radius: 8px;
 }
