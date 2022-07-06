@@ -8,6 +8,7 @@ import Position from './Position/Position'
 import orgIcon from '../../assets/icons/Organization.svg'
 import profile from '../../assets/icons/Profile.svg'
 import location from '../../assets/icons/Location.svg'
+import CreateButton from './CreateButton/CreateButton'
 
 export default function CalendarAdmin() {
   return (
@@ -24,9 +25,7 @@ export default function CalendarAdmin() {
           <div className={s.iconWrapper}>
             <SearchIcon />
           </div>
-          <button className={s.btn} type="button">
-            + Создать
-          </button>
+          <CreateButton />
         </div>
       </div>
       <aside className={s.aside}>

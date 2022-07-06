@@ -1,0 +1,29 @@
+.dropdownContent {
+    width: 128px;
+    position: absolute;
+    top: 50px;
+    right: 360px;
+    background-color: white;
+    padding: 10px;
+    border-radius:8px;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+}
+
+.dropdownContent .dropdownItem {
+    padding: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2E2E2E;
+    transition: all 0.3ss;
+}
+
+.dropdownItem {
+    cursor: pointer;
+}
+
+.dropdownItem:hover {
+    background-color: #f4f4f4;
+}
