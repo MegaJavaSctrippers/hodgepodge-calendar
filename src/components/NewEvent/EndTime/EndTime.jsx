@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { LocalizationProvider, TimePicker } from '@mui/x-date-pickers'
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
+import { TimePicker } from '@mui/x-date-pickers/TimePicker'
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
 import { TextField } from '@mui/material'
 

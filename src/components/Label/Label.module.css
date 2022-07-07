@@ -1,0 +1,70 @@
+.labels {
+    width: 180px;
+    margin: 16px 0 0 10px;
+}
+
+.myLabels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.myLabels span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4B84F4;
+}
+
+.myLabels button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4B84F4;
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.labelsItem{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2E2E2E;
+    height: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+
+.color {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.labelsItem:nth-child(1) .color {
+    background: #E37DAC;
+}
+
+.labelsItem:nth-child(2) .color{
+    background: #80DEA0;
+}
+.labelsItem:nth-child(3) .color{
+    background: #8A75FA;
+}
+.labelsItem:nth-child(4) .color{
+    background: #FFD480;
+}
+.labelsItem:nth-child(5) .color{
+    background: #6DCFE1;
+}
+
+
