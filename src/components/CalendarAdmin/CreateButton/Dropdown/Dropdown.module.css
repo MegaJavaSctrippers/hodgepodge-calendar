@@ -21,7 +21,11 @@
 }
 
 .dropdownItem {
+    width: 110px;
+    text-align: start;
     cursor: pointer;
+    border: none;
+    background: none;
 }
 
 .dropdownItem:hover {
