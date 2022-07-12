@@ -1,16 +1,19 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { useDispatch } from 'react-redux'
 import SearchIcon from '@mui/icons-material/Search'
+import { searchPosition } from '../../../store/SearchPositionSlice'
+import { closeCreatePosition } from '../../../store/CreatePositionSlice'
 import Organization from '../Organization/Organization'
 import Department from '../Department/Department'
 import Position from '../Position/Position'
 import CreateButton from '../CreateButton/CreateButton'
 import s from './TopBarOrganization.module.css'
 
-export default function ToparOrganization({ openCreatePosition, openSearchPosition }) {
-  ToparOrganization.propTypes = {
-    openCreatePosition: PropTypes.func.isRequired,
-    openSearchPosition: PropTypes.func.isRequired,
+export default function TopBarOrganization() {
+  const dispatch = useDispatch()
+  const searchPositionFunc = () => {
+    dispatch(searchPosition())
+    dispatch(closeCreatePosition())
   }
 
   return (
@@ -19,9 +22,9 @@ export default function ToparOrganization({ openCreatePosition, openSearchPositi
       <Department />
       <Position />
       <div className={s.iconWrapper}>
-        <SearchIcon onClick={openSearchPosition} />
+        <SearchIcon onClick={searchPositionFunc} />
       </div>
-      <CreateButton openCreatePosition={openCreatePosition} />
+      <CreateButton />
     </div>
   )
 }

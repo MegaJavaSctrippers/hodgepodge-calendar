@@ -1,13 +1,8 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import Dropdown from './Dropdown/Dropdown'
 import s from './CreateButton.module.css'
 
-export default function CreateButton({ openCreatePosition }) {
-  CreateButton.propTypes = {
-    openCreatePosition: PropTypes.func.isRequired,
-  }
-
+export default function CreateButton() {
   const [active, setActive] = useState(false)
   const openDropdown = () => {
     setActive(!active)
@@ -19,9 +14,7 @@ export default function CreateButton({ openCreatePosition }) {
         + Создать
       </button>
 
-      {active && (
-        <Dropdown setActive={setActive} active={active} openCreatePosition={openCreatePosition} />
-      )}
+      {active && <Dropdown setActive={setActive} active={active} />}
     </div>
   )
 }
