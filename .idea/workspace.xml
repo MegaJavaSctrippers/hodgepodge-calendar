@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11f251a0-fa29-4bd9-9e22-41c92cf9373f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AdminEntry/AdminEntry.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdminEntry/AdminEntry.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyCalendar/MyCalendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyCalendar/MyCalendar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewEvent/NewEvent.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent/NewEvent.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +75,7 @@
       <workItem from="1656930807862" duration="4056000" />
       <workItem from="1657143025365" duration="1022000" />
       <workItem from="1657259872999" duration="2010000" />
-      <workItem from="1657606090502" duration="12163000" />
+      <workItem from="1657606090502" duration="12775000" />
     </task>
     <servers />
   </component>

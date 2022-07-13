@@ -1,0 +1,29 @@
+.topBar {
+    flex-grow: 1;
+    height: 55px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.07);
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px; 
+}
+
+.iconWrapper {
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+    background-color: #4B84F4;
+    border: 1px solid #4B84F4;
+    border-radius: 8px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.iconWrapper:hover {
+    background-color: #fff;
+    color: #4B84F4;
+    transition: all 0.3s;
+}
