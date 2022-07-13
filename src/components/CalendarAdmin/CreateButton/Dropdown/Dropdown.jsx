@@ -1,15 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { useDispatch } from 'react-redux'
+import PropTypes from 'prop-types'
 import { createPosition } from '../../../../store/CreatePositionSlice'
-import { closeSearchPosition } from '../../../../store/SearchPositionSlice'
 import s from './Dropdown.module.css'
 
 export default function Dropdown({ setActive, active }) {
   const dispatch = useDispatch()
-  const createPositionFunc = () => {
+
+  const openCreatePosition = () => {
     dispatch(createPosition())
-    dispatch(closeSearchPosition())
   }
 
   Dropdown.propTypes = {
@@ -26,7 +25,7 @@ export default function Dropdown({ setActive, active }) {
         <button className={s.dropdownItem} type="button">
           Отдел
         </button>
-        <button className={s.dropdownItem} type="button" onClick={createPositionFunc}>
+        <button className={s.dropdownItem} type="button" onClick={openCreatePosition}>
           Должность
         </button>
       </div>

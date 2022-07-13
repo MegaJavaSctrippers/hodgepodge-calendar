@@ -9,11 +9,11 @@ const SearchPositionSlice = createSlice({
     searchPosition(state) {
       state.searchPosition = true
     },
-    closeSearchPosition(state) {
+    refreshSearch(state) {
       state.searchPosition = false
     },
   },
 })
 
-export const { searchPosition, closeSearchPosition } = SearchPositionSlice.actions
+export const { searchPosition, refreshSearch } = SearchPositionSlice.actions
 export default SearchPositionSlice.reducer

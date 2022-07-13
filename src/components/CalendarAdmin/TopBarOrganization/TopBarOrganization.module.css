@@ -1,5 +1,13 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    width: 100vw;
+}
+
 .topBar {
-    flex-grow: 1;
     height: 55px;
     background: #FFFFFF;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.07);
@@ -27,3 +35,24 @@
     color: #4B84F4;
     transition: all 0.3s;
 }
+
+.refreshIconWrapper {
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+    background-color: #fff;
+    border: 1px solid #4B84F4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.iconWrapper:hover {
+    background-color: #4B84F4;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+

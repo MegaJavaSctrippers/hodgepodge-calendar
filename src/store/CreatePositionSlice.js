@@ -9,11 +9,11 @@ const CreatePositionSlice = createSlice({
     createPosition(state) {
       state.createPosition = true
     },
-    closeCreatePosition(state) {
+    refreshCreate(state) {
       state.createPosition = false
     },
   },
 })
 
-export const { createPosition, closeCreatePosition } = CreatePositionSlice.actions
+export const { createPosition, refreshCreate } = CreatePositionSlice.actions
 export default CreatePositionSlice.reducer

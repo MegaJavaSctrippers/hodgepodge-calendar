@@ -1,16 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
-import OrganizationBarReducer from './OrganizationBarSlice'
-import UserBarReducer from './UserBarSlice'
-import LocationBarReducer from './LocationBarSlice'
-import CreatePositionReducer from './CreatePositionSlice'
 import SearchPositionReducer from './SearchPositionSlice'
+import CreatePositionReducer from './CreatePositionSlice'
+import EditPositionReducer from './EditPositionSlice'
+import DeletePositionModalReducer from './DeletePositionModalSlice'
 
 export default configureStore({
   reducer: {
-    organizationBar: OrganizationBarReducer,
-    userBar: UserBarReducer,
-    locationBar: LocationBarReducer,
-    createPosition: CreatePositionReducer,
     searchPosition: SearchPositionReducer,
+    createPosition: CreatePositionReducer,
+    editPosition: EditPositionReducer,
+    deletePositionModal: DeletePositionModalReducer,
   },
 })
