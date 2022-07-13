@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+// eslint-disable-next-line import/no-unresolved
 import { useForm } from 'react-hook-form'
 import s from './AdminEntry.module.css'
 import admin from '../../assets/icons/Group 239.png'

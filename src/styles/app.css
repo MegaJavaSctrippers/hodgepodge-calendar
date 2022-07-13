@@ -2,18 +2,19 @@
 
 .grid_container {
     display: grid;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     grid-template-rows: 48px 1fr;
     grid-template-columns: 1fr 10fr;
     grid-template-areas:
     "header header header"
     "sidebar time_body time_body";
     /*overflow: hidden;*/
+    height: 100vh;
 }
 
 .sidebar{
     width: 200px;
-    height: 577px;
+    height: 100%;
     grid-area: sidebar;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, .4);
     background: #fff;

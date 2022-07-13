@@ -17,6 +17,26 @@ function TimeBody() {
             <p>Пн</p>
             <h5>2</h5>
           </div>
+          <div className={classes.day}>
+            <p>Пн</p>
+            <h5>2</h5>
+          </div>
+          <div className={classes.day}>
+            <p>Пн</p>
+            <h5>2</h5>
+          </div>
+          <div className={classes.day}>
+            <p>Пн</p>
+            <h5>2</h5>
+          </div>
+          <div className={classes.day}>
+            <p>Пн</p>
+            <h5>2</h5>
+          </div>
+          <div className={classes.day}>
+            <p>Пн</p>
+            <h5>2</h5>
+          </div>
         </div>
       </div>
       <div className={classes.timesWrap}>
@@ -27,7 +47,14 @@ function TimeBody() {
               {time}
               :00
             </div>
-            <div className={classes.field} />
+            <div className={classes.slots}>
+              <div className={classes.slot}>
+                <div className={classes.event}>Встреча</div>
+              </div>
+              <div className={classes.slot}>
+                <div className={classes.event}>Встреча</div>
+              </div>
+            </div>
           </div>
         ))}
       </div>

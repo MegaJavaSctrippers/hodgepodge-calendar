@@ -2,31 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11f251a0-fa29-4bd9-9e22-41c92cf9373f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/Group 239.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/Vector.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminEntry/AdminEntry.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminEntry/AdminEntry.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminEntry/ForgotPassword/ForgotPassword.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminEntry/ForgotPassword/ForgotPassword.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CalendarAdmin/CalendarAdmin.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CalendarAdmin/CalendarAdmin.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EventRepeatDays/DayOfWeek/DayOfWeek.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EventRepeatDays/EventRepeatDays.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EventRepeatDays/EventRepeatDays.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewEvent/Date/DateNew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent/Date/DateNew.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EndItems/EndItems.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EndOfRepeat/EndOfRepeat.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EndItems/EndItems.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EventRepeat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EventRepeat.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EventRepeat.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EventRepeat.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/RepeatDays/RepeatDays.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/RepeatDays/RepeatDays.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent/EventRepeat/EventRepeatDays/DayOfWeek/DayOfWeek.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewEvent/Repeat/Repeat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent/Repeat/Repeat.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewEvent/SwitchToggle/SwitchToggle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent/SwitchToggle/SwitchToggle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AdminEntry/AdminEntry.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdminEntry/AdminEntry.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyCalendar/MyCalendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyCalendar/MyCalendar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewEvent/NewEvent.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent/NewEvent.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +82,9 @@
       <workItem from="1656911646789" duration="7088000" />
       <workItem from="1656929759579" duration="859000" />
       <workItem from="1656930807862" duration="4056000" />
-      <workItem from="1657143025365" duration="233000" />
+      <workItem from="1657143025365" duration="1022000" />
+      <workItem from="1657259872999" duration="2010000" />
+      <workItem from="1657606090502" duration="11907000" />
     </task>
     <servers />
   </component>

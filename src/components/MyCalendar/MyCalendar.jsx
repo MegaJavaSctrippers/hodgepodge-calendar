@@ -8,6 +8,18 @@ import './MyCalendar.css'
 function MyCalendar() {
   const [date, setDate] = useState(new Date())
 
+  const checkProps = (value, event) => {
+    const date = new Date()
+    // eslint-disable-next-line no-console
+    console.log(event.currentTarget)
+    // eslint-disable-next-line no-console
+    console.log(value)
+    // eslint-disable-next-line no-console
+    console.log(event.target.setAttribute('dateTime', date.getDate()))
+
+    // .getAttribute('aria-label')
+  }
+
   return (
     <div className="MyCalendar">
       <Calendar
@@ -16,6 +28,9 @@ function MyCalendar() {
         selectRange
         next2Label={null}
         prev2Label={null}
+        onClickDay={checkProps}
+        // eslint-disable-next-line react/jsx-no-duplicate-props
+        selectRange
       />
     </div>
   )
