@@ -9,7 +9,7 @@ import TopBarOrganization from './components/CalendarAdmin/TopBarOrganization/To
 import TopBarUser from './components/CalendarAdmin/TopBarUser/TopBarUser'
 import TopBarLocation from './components/CalendarAdmin/TopBarLocation/TopBarLocation'
 
-export default function App() {
+export function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -22,3 +22,5 @@ export default function App() {
     </Routes>
   )
 }
+
+export default App

@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField'
 import Autocomplete from '@mui/material/Autocomplete'
 
 const Positionlist = [
-  { label: 'Должность1', id: 1 },
+  { label: 'UX/UI дизайнер', id: 1 },
   { label: 'Должность2', id: 2 },
   { label: 'Должность3', id: 3 },
   { label: 'Должность4', id: 4 },

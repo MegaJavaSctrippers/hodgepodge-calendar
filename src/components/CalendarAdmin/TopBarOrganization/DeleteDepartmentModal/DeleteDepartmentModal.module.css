@@ -11,7 +11,8 @@
 
 .modal {
     position: absolute;
-    width: 368px;
+    width: 392px;
+    height: 250px;
     left: 40%;
     top: 30%;
     background: #FFFFFF;
@@ -23,46 +24,22 @@
     margin: 48px 16px 24px 16px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-    display: flex;
-    align-items: center;
     text-align: center;
     color: #2E2E2E;
 }
 
-.btnWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-
-.btnNo {
+.btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
     width: 120px;
     height: 40px;
-    background: #E0E6EC;
+    background: rgba(10, 37, 63, 0.2);
     border-radius: 10px;
     border: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #2E2E2E;
-    cursor: pointer;
-}
-
-.btnYes {
-    width: 120px;
-    height: 40px;
-    background: #4B84F4;
-    border-radius: 10px;
-    border: none;
-    background: #4B84F4;
-    border-radius: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -74,7 +51,20 @@
 
 .close {
     position: absolute;
-    top: 15px;
-    left: 330px;
+    top: 16px;
+    right: 16px;
     cursor: pointer;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 16px 24px;
+}
+
+.input {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
 }

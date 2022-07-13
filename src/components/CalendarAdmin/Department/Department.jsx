@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField'
 import Autocomplete from '@mui/material/Autocomplete'
 
 const Departmentlist = [
-  { label: 'Отдел1', id: 1 },
+  { label: 'Отдел безопасности', id: 1 },
   { label: 'Отдел2', id: 2 },
   { label: 'Отдел3', id: 3 },
   { label: 'Отдел4', id: 4 },
