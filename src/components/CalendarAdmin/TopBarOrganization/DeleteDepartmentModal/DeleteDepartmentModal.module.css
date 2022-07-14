@@ -12,7 +12,7 @@
 .modal {
     position: absolute;
     width: 392px;
-    height: 250px;
+    height: 260px;
     left: 40%;
     top: 30%;
     background: #FFFFFF;
@@ -59,12 +59,11 @@
 .checkbox {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     margin: 0 16px 24px;
 }
 
-.input {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
+.active {
+    background: #4B84F4;
+    color: #FFFFFF;
+    transition: all 0.3s;
 }
