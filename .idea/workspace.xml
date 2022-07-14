@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11f251a0-fa29-4bd9-9e22-41c92cf9373f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/TimeBody/Day/Day.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TimeBody/Week/Week.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TimeBody/Week/Week.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DayPicker/DayPicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DayPicker/DayPicker.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DayPicker/DayPicker.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DayPicker/DayPicker.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyCalendar/MyCalendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyCalendar/MyCalendar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TimeBody/TimeBody.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +46,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\user\\Desktop\\megalab-calendar\\node_modules\\prettier&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "eslint.code.style.apply.dismiss": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\user\\Desktop\\megalab-calendar\\node_modules\\prettier",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\megalab-calendar\src\components\UI\Button" />
@@ -76,6 +90,7 @@
       <workItem from="1657143025365" duration="1022000" />
       <workItem from="1657259872999" duration="2010000" />
       <workItem from="1657606090502" duration="12775000" />
+      <workItem from="1657721425220" duration="18610000" />
     </task>
     <servers />
   </component>

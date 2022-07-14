@@ -23,6 +23,7 @@ function MyCalendar() {
   return (
     <div className="MyCalendar">
       <Calendar
+        locale="ru-RU"
         value={date}
         onChange={() => setDate(date)}
         selectRange

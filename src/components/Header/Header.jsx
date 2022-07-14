@@ -6,11 +6,17 @@ import RightBlock from './RightBlock/RightBlock'
 
 import classes from './Header.module.css'
 
-function Header() {
+function Header(props) {
   return (
     <header className={classes.header}>
       <Logo />
-      <DayPicker />
+      {/* eslint-disable-next-line react/prop-types,max-len */}
+      <DayPicker
+        // eslint-disable-next-line react/prop-types
+        selectedMode={props.selectedMode}
+        // eslint-disable-next-line react/prop-types
+        setSelectedMode={props.setSelectedMode}
+      />
       <RightBlock />
     </header>
   )

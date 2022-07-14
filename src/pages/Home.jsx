@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../components/Header/Header'
 import Sidebar from '../components/Sidebar/Sidebar'
 import TimeBody from '../components/TimeBody/TimeBody'
 
 function Home() {
+  const [selectedMode, setSelectedMode] = useState({ id: 1, name: 'День' })
+
   return (
     <div className="grid_container">
-      <Header />
+      <Header selectedMode={selectedMode} setSelectedMode={setSelectedMode} />
       <Sidebar />
-      <TimeBody />
+      <TimeBody selectedMode={selectedMode} />
     </div>
   )
 }
