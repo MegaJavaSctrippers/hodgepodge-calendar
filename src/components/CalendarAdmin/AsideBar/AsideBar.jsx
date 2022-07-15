@@ -1,70 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import classNames from 'classnames'
-import PropTypes from 'prop-types'
-import { useDispatch } from 'react-redux'
-import { openOrganizationBar, closeOrganizationBar } from '../../../store/OrganizationBarSlice'
-import { openUserBar, closeUserBar } from '../../../store/UserBarSlice'
-import { openLocationBar, closeLocationBar } from '../../../store/LocationBarSlice'
-import { closeCreatePosition } from '../../../store/CreatePositionSlice'
-import { closeSearchPosition } from '../../../store/SearchPositionSlice'
 import orgIcon from '../../../assets/icons/Organization.svg'
 import user from '../../../assets/icons/Profile.svg'
 import location from '../../../assets/icons/Location.svg'
 import s from './AsideBar.module.css'
 
-export default function AsideBar({ activeOrg, activeUser, activeLocation }) {
-  const dispatch = useDispatch()
-  const openOrganizationBarFunc = () => {
-    dispatch(openOrganizationBar())
-    dispatch(closeUserBar())
-    dispatch(closeLocationBar())
+export default function AsideBar() {
+  const [activeOrg, setActiveOrg] = useState(false)
+  const [activeUser, setActiveUser] = useState(false)
+  const [activeLocation, setActiveLocation] = useState(false)
+
+  const makeActiveOrg = () => {
+    setActiveOrg(true)
+    setActiveUser(false)
+    setActiveLocation(false)
   }
-  const openUserBarFunc = () => {
-    dispatch(openUserBar())
-    dispatch(closeOrganizationBar())
-    dispatch(closeLocationBar())
-    dispatch(closeCreatePosition())
-    dispatch(closeSearchPosition())
+  const makeActiveUser = () => {
+    setActiveUser(true)
+    setActiveOrg(false)
+    setActiveLocation(false)
   }
-  const openLocationBarFunc = () => {
-    dispatch(openLocationBar())
-    dispatch(closeUserBar())
-    dispatch(closeOrganizationBar())
-    dispatch(closeCreatePosition())
-    dispatch(closeSearchPosition())
+  const makeActiveLocation = () => {
+    setActiveLocation(true)
+    setActiveOrg(false)
+    setActiveUser(false)
   }
 
-  AsideBar.propTypes = {
-    activeOrg: PropTypes.func.isRequired,
-    activeUser: PropTypes.func.isRequired,
-    activeLocation: PropTypes.func.isRequired,
-  }
   return (
     <aside className={s.aside}>
-      <button
+      <Link
+        to="organization"
         className={classNames(s.aside_item, { [s.active]: activeOrg })}
         type="button"
-        onClick={openOrganizationBarFunc}
+        onClick={makeActiveOrg}
       >
         <img src={orgIcon} alt="organization-icon" />
         <p>Организация</p>
-      </button>
-      <button
+      </Link>
+      <Link
+        to="users"
         className={classNames(s.aside_item, { [s.active]: activeUser })}
         type="button"
-        onClick={openUserBarFunc}
+        onClick={makeActiveUser}
       >
         <img src={user} alt="user-icon" />
         <p>Пользователи</p>
-      </button>
-      <button
+      </Link>
+      <Link
+        to="rooms"
         className={classNames(s.aside_item, { [s.active]: activeLocation })}
         type="button"
-        onClick={openLocationBarFunc}
+        onClick={makeActiveLocation}
       >
         <img src={location} alt="location-icon" />
         <p>Помещения</p>
-      </button>
+      </Link>
     </aside>
   )
 }

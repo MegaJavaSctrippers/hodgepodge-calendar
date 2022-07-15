@@ -1,5 +1,8 @@
 .topBar {
-    flex-grow: 1;
+    position: absolute;
+    left: 200px;
+    top: 0px;    
+    width: 100vw;
     height: 55px;
     background: #FFFFFF;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.07);
