@@ -6,6 +6,8 @@ import EditPositionReducer from './EditPositionSlice'
 import DeletePositionModalReducer from './DeletePositionModalSlice'
 import DeleteDepartmentModalReducer from './DeleteDepartmentModalSlice'
 import DeletefullDepNotificationReducer from './DeletefullDepNotificationSlice'
+import RelocateModalReducer from './RelocateModalSlice'
+import RelocateDepNotificationReducer from './RelocateDepNotificationSlice'
 
 export default configureStore({
   reducer: {
@@ -16,5 +18,7 @@ export default configureStore({
     deletePositionModal: DeletePositionModalReducer,
     deleteDepartmentModal: DeleteDepartmentModalReducer,
     deletefullDepNotification: DeletefullDepNotificationReducer,
+    relocateModal: RelocateModalReducer,
+    relocateDepNotification: RelocateDepNotificationReducer,
   },
 })

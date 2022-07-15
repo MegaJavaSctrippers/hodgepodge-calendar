@@ -1,0 +1,99 @@
+
+.wrapper {
+    position: absolute;
+    width: 476px;
+    height: 568px;
+    left: 400px;
+    top: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 25px rgba(136, 136, 136, 0.35);
+    border-radius: 12px;
+}
+
+.container {
+    margin: 0 24px;
+}
+
+.icon {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+
+.title {
+    width: 364px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2E2E2E;
+    margin: 0 auto;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.participants {
+    height: 400px;
+    overflow: auto;
+    padding: 10px 20px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 8px rgba(136, 136, 136, 0.16);
+    border-radius: 12px;
+}
+
+.btn {
+    width: 196px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4B84F4;
+    border: 1px solid #4B84F4;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #4B84F4;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2E2E2E;
+}
+
+.position {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(46, 46, 46, 0.7);
+    margin-bottom: 16px;
+}
+
+.participant_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
