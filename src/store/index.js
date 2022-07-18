@@ -11,6 +11,7 @@ import RelocateDepNotificationReducer from './RelocateDepNotificationSlice'
 import SearchUsersReducer from './SearchUsersSlice'
 import InviteUserReducer from './InviteUserSlice'
 import CreateUserReducer from './CreateUserSlice'
+import EditUserReducer from './EditUserSlice'
 
 export default configureStore({
   reducer: {
@@ -26,5 +27,6 @@ export default configureStore({
     searchUsers: SearchUsersReducer,
     inviteUser: InviteUserReducer,
     createUser: CreateUserReducer,
+    editUser: EditUserReducer,
   },
 })

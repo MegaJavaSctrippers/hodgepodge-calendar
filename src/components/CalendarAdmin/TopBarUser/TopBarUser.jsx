@@ -14,11 +14,14 @@ import InviteUser from './InviteUser/InviteUser'
 import { refreshInviteUser } from '../../../store/InviteUserSlice'
 import CreateUser from './CreateUser/CreateUser'
 import { refreshCreateUser } from '../../../store/CreateUserSlice'
+import EditUser from './EditUser/EditUser'
+import { refreshEditUser } from '../../../store/EditUserSlice'
 
 export default function TopBarUser() {
   const openSearchUsers = useSelector((state) => state.searchUsers.searchUsers)
   const openInviteUser = useSelector((state) => state.inviteUser.inviteUser)
   const openCreateUser = useSelector((state) => state.createUser.createUser)
+  const openEditUser = useSelector((state) => state.editUser.editUser)
 
   const dispatch = useDispatch()
 
@@ -30,6 +33,7 @@ export default function TopBarUser() {
     dispatch(refreshSearchUsers())
     dispatch(refreshInviteUser())
     dispatch(refreshCreateUser())
+    dispatch(refreshEditUser())
   }
 
   return (
@@ -51,6 +55,7 @@ export default function TopBarUser() {
         {openSearchUsers && <SearchUsers />}
         {openInviteUser && <InviteUser />}
         {openCreateUser && <CreateUser />}
+        {openEditUser && <EditUser />}
       </div>
     </div>
   )
