@@ -6,17 +6,25 @@ import UserFirstLastName from '../UserFirstLastName/UserFirstLastName'
 import Organization from '../Organization/Organization'
 import Department from '../Department/Department'
 import Position from '../Position/Position'
-import InviteButton from '../InviteButton/InviteButton'
+import InviteButton from './InviteButton/InviteButton'
 import s from './TopBarUser.module.css'
 import SearchUsers from './SearchUsers/SearchUsers'
-import { searchUsers } from '../../../store/SearchUsersSlice'
+import { refreshSearchUsers, searchUsers } from '../../../store/SearchUsersSlice'
+import InviteUser from './InviteUser/InviteUser'
+import { refreshInviteUser } from '../../../store/InviteUserSlice'
 
 export default function TopBarUser() {
   const openSearchUsers = useSelector((state) => state.searchUsers.searchUsers)
+  const openInviteUser = useSelector((state) => state.inviteUser.inviteUser)
   const dispatch = useDispatch()
 
   const openSearchUsersFunc = () => {
     dispatch(searchUsers())
+  }
+
+  const closeFunc = () => {
+    dispatch(refreshSearchUsers())
+    dispatch(refreshInviteUser())
   }
 
   return (
@@ -30,13 +38,13 @@ export default function TopBarUser() {
           <SearchIcon />
         </button>
         <button type="button" className={s.refreshIconWrapper}>
-          <RefreshIcon />
+          <RefreshIcon onClick={closeFunc} />
         </button>
         <InviteButton />
       </div>
       <div>
         {openSearchUsers && <SearchUsers />}
-        {openSearchUsers && <SearchUsers />}
+        {openInviteUser && <InviteUser />}
       </div>
     </div>
   )

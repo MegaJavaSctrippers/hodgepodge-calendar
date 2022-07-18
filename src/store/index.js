@@ -9,6 +9,7 @@ import DeletefullDepNotificationReducer from './DeletefullDepNotificationSlice'
 import RelocateModalReducer from './RelocateModalSlice'
 import RelocateDepNotificationReducer from './RelocateDepNotificationSlice'
 import SearchUsersReducer from './SearchUsersSlice'
+import InviteUserReducer from './InviteUserSlice'
 
 export default configureStore({
   reducer: {
@@ -22,5 +23,6 @@ export default configureStore({
     relocateModal: RelocateModalReducer,
     relocateDepNotification: RelocateDepNotificationReducer,
     searchUsers: SearchUsersReducer,
+    inviteUser: InviteUserReducer,
   },
 })

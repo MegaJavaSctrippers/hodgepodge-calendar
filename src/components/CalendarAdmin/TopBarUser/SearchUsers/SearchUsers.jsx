@@ -13,19 +13,19 @@ export default function SearchUsers() {
       <div className={s.inputs}>
         <div>
           <p className={s.title}>ФИО пользователя</p>
-          <input className={s.input} type="text" />
+          <input className={s.input} type="text" value="Асанов Тилек Асанович" />
         </div>
         <div>
           <p className={s.title}>Отдел пользователя</p>
-          <input className={s.input} type="text" />
+          <input className={s.input} type="text" value="Отдел разработок" />
         </div>
         <div>
           <p className={s.title}>Должность</p>
-          <input className={s.input} type="text" />
+          <input className={s.input} type="text" value="Java разработчик" />
         </div>
         <div>
           <p className={s.title}>E-mail</p>
-          <input className={s.input} type="email" />
+          <input className={s.input} type="email" value="ast@gmail.com" />
         </div>
         <div>
           <p className={s.title}>Пароль</p>
