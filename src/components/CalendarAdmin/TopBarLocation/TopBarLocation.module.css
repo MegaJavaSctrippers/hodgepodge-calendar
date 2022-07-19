@@ -30,3 +30,23 @@
     color: #4B84F4;
     transition: all 0.3s;
 }
+
+.refreshIconWrapper {
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+    background-color: #fff;
+    border: 1px solid #4B84F4;
+    color: #4B84F4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.refreshIconWrapper:hover {
+    background-color: #4B84F4;
+    color: #fff;
+    transition: all 0.3s;
+}
