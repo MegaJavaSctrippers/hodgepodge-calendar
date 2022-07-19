@@ -5,12 +5,16 @@ import { useDispatch } from 'react-redux'
 import s from './SearchUsers.module.css'
 import { editUser } from '../../../../store/EditUserSlice'
 import { refreshSearchUsers } from '../../../../store/SearchUsersSlice'
+import { deleteUserModal } from '../../../../store/DeleteUserModalSlice'
 
 export default function SearchUsers() {
   const dispatch = useDispatch()
   const openEditPositionFunc = () => {
     dispatch(editUser())
     dispatch(refreshSearchUsers())
+  }
+  const openDeleteUserModalFunc = () => {
+    dispatch(deleteUserModal())
   }
 
   return (
@@ -41,7 +45,7 @@ export default function SearchUsers() {
           <input className={s.input} type="password" />
         </div>
         <ModeEditIcon className={s.icon} color="primary" onClick={openEditPositionFunc} />
-        <DeleteOutlineIcon className={s.icon} color="primary" />
+        <DeleteOutlineIcon className={s.icon} color="primary" onClick={openDeleteUserModalFunc} />
       </div>
     </div>
   )

@@ -1,9 +1,15 @@
 import React from 'react'
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
 import ModeEditIcon from '@mui/icons-material/ModeEdit'
+import { useDispatch } from 'react-redux'
+import { deleteUserModal } from '../../../../store/DeleteUserModalSlice'
 import s from './EditUser.module.css'
 
 export default function EditUser() {
+  const dispatch = useDispatch()
+  const openDeleteUserModalFunc = () => {
+    dispatch(deleteUserModal())
+  }
   return (
     <div className={s.wrapper}>
       <div className={s.position}>
@@ -31,7 +37,7 @@ export default function EditUser() {
           Сохранить
         </button>
         <ModeEditIcon className={s.icon} color="disabled" />
-        <DeleteOutlineIcon className={s.icon} color="primary" />
+        <DeleteOutlineIcon className={s.icon} color="primary" onClick={openDeleteUserModalFunc} />
       </div>
     </div>
   )

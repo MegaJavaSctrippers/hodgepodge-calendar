@@ -16,12 +16,14 @@ import CreateUser from './CreateUser/CreateUser'
 import { refreshCreateUser } from '../../../store/CreateUserSlice'
 import EditUser from './EditUser/EditUser'
 import { refreshEditUser } from '../../../store/EditUserSlice'
+import DeleteUserModal from './SearchUsers/DeleteUserModal/DeleteUserModal'
 
 export default function TopBarUser() {
   const openSearchUsers = useSelector((state) => state.searchUsers.searchUsers)
   const openInviteUser = useSelector((state) => state.inviteUser.inviteUser)
   const openCreateUser = useSelector((state) => state.createUser.createUser)
   const openEditUser = useSelector((state) => state.editUser.editUser)
+  const openDeleteUserModal = useSelector((state) => state.deleteUserModal.deleteUserModal)
 
   const dispatch = useDispatch()
 
@@ -56,6 +58,7 @@ export default function TopBarUser() {
         {openInviteUser && <InviteUser />}
         {openCreateUser && <CreateUser />}
         {openEditUser && <EditUser />}
+        {openDeleteUserModal && <DeleteUserModal />}
       </div>
     </div>
   )

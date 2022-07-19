@@ -12,6 +12,7 @@ import SearchUsersReducer from './SearchUsersSlice'
 import InviteUserReducer from './InviteUserSlice'
 import CreateUserReducer from './CreateUserSlice'
 import EditUserReducer from './EditUserSlice'
+import DeleteUserModalReducer from './DeleteUserModalSlice'
 
 export default configureStore({
   reducer: {
@@ -28,5 +29,6 @@ export default configureStore({
     inviteUser: InviteUserReducer,
     createUser: CreateUserReducer,
     editUser: EditUserReducer,
+    deleteUserModal: DeleteUserModalReducer,
   },
 })
