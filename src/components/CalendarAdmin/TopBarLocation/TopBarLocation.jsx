@@ -11,10 +11,13 @@ import SearchRoom from './SearchRoom/SearchRoom'
 import { refreshSearchRoom, searchRoom } from '../../../store/SearchRoomSlice'
 import { refreshCreateRoom } from '../../../store/CreateRoomSlice'
 import CreateRoom from './CreateRoom/CreateRoom'
+import EditRoom from './SearchRoom/EditRoom/EditRoom'
+import { refreshEditRoom } from '../../../store/EditRoomSlice'
 
 export default function TopBarLocation() {
   const openSearchRoom = useSelector((state) => state.searchRoom.searchRoom)
   const openCreateRoom = useSelector((state) => state.createRoom.createRoom)
+  const openEditRoom = useSelector((state) => state.editRoom.editRoom)
 
   const dispatch = useDispatch()
 
@@ -24,6 +27,7 @@ export default function TopBarLocation() {
   const closeFunc = () => {
     dispatch(refreshSearchRoom())
     dispatch(refreshCreateRoom())
+    dispatch(refreshEditRoom())
   }
 
   return (
@@ -43,6 +47,7 @@ export default function TopBarLocation() {
       <div>
         {openSearchRoom && <SearchRoom />}
         {openCreateRoom && <CreateRoom />}
+        {openEditRoom && <EditRoom />}
       </div>
     </div>
   )

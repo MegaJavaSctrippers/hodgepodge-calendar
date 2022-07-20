@@ -2,39 +2,36 @@ import React from 'react'
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
 import ModeEditIcon from '@mui/icons-material/ModeEdit'
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'
-import classNames from 'classnames'
-import { useDispatch } from 'react-redux'
-import s from './SearchRoom.module.css'
-import { editRoom } from '../../../../store/EditRoomSlice'
-import { refreshSearchRoom } from '../../../../store/SearchRoomSlice'
+import s from './EditRoom.module.css'
 
-export default function SearchRoom() {
-  const dispatch = useDispatch()
-
-  const openEditRoomFunc = () => {
-    dispatch(editRoom())
-    dispatch(refreshSearchRoom())
-  }
+export default function EditUser() {
   return (
     <div className={s.wrapper}>
       <div className={s.position}>
-        <div className={s.create}>Поиск:</div>
+        <div className={s.create}>Редактирование помещения:</div>
         <div className={s.create_item}>1 этаж, 4 кабинет</div>
       </div>
       <div className={s.inputs}>
         <div>
           <p className={s.title}>Название помещения</p>
-          <p className={s.input}>1 этаж, 4 кабинет</p>
+          <input className={s.input} type="text" />
         </div>
         <div>
           <p className={s.title}>Вместимость (м2)</p>
-          <p className={s.input}>12</p>
+          <input className={s.input} type="text" />
+        </div>
+        <div>
+          <p className={s.title}>Должность</p>
+          <input className={s.input} type="text" />
         </div>
         <div>
           <p className={s.title}>Описание</p>
-          <p className={classNames(s.input, s.description)}>Кондиционер, диван, стулья</p>
+          <input className={s.input} type="text" />
         </div>
-        <ModeEditIcon className={s.icon} color="primary" onClick={openEditRoomFunc} />
+        <button className={s.btn} type="button">
+          Сохранить
+        </button>
+        <ModeEditIcon className={s.icon} color="disabled" />
         <DeleteOutlineIcon className={s.icon} color="primary" />
         <VisibilityOffIcon className={s.icon} color="primary" />
       </div>
