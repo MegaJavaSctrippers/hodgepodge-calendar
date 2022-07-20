@@ -92,3 +92,7 @@
 .icon {
     cursor: pointer;
 }
+
+.deact {
+    color: red;
+}

@@ -17,6 +17,7 @@ import SearchRoomReducer from './SearchRoomSlice'
 import CreateRoomReducer from './CreateRoomSlice'
 import EditRoomReducer from './EditRoomSlice'
 import DeleteRoomModalReducer from './DeleteRoomModalSlice'
+import InvisibleRoomReducer from './InvisibleRoomSlice'
 
 export default configureStore({
   reducer: {
@@ -38,5 +39,6 @@ export default configureStore({
     createRoom: CreateRoomReducer,
     editRoom: EditRoomReducer,
     deleteRoomModal: DeleteRoomModalReducer,
+    invisibleRoom: InvisibleRoomReducer,
   },
 })

@@ -87,3 +87,13 @@
 .icon {
     cursor: pointer;
 }
+.deact {
+    color: red;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin-left: 980px;
+    margin-top: 20px;
+}
