@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux'
 import s from './SearchRoom.module.css'
 import { editRoom } from '../../../../store/EditRoomSlice'
 import { refreshSearchRoom } from '../../../../store/SearchRoomSlice'
+import { deleteRoomModal } from '../../../../store/DeleteRoomModalSlice'
 
 export default function SearchRoom() {
   const dispatch = useDispatch()
@@ -15,6 +16,10 @@ export default function SearchRoom() {
     dispatch(editRoom())
     dispatch(refreshSearchRoom())
   }
+  const openDeleteRoomModalFunc = () => {
+    dispatch(deleteRoomModal())
+  }
+
   return (
     <div className={s.wrapper}>
       <div className={s.position}>
@@ -35,7 +40,7 @@ export default function SearchRoom() {
           <p className={classNames(s.input, s.description)}>Кондиционер, диван, стулья</p>
         </div>
         <ModeEditIcon className={s.icon} color="primary" onClick={openEditRoomFunc} />
-        <DeleteOutlineIcon className={s.icon} color="primary" />
+        <DeleteOutlineIcon className={s.icon} color="primary" onClick={openDeleteRoomModalFunc} />
         <VisibilityOffIcon className={s.icon} color="primary" />
       </div>
     </div>

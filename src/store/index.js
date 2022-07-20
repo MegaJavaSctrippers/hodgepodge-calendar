@@ -16,6 +16,7 @@ import DeleteUserModalReducer from './DeleteUserModalSlice'
 import SearchRoomReducer from './SearchRoomSlice'
 import CreateRoomReducer from './CreateRoomSlice'
 import EditRoomReducer from './EditRoomSlice'
+import DeleteRoomModalReducer from './DeleteRoomModalSlice'
 
 export default configureStore({
   reducer: {
@@ -36,5 +37,6 @@ export default configureStore({
     searchRoom: SearchRoomReducer,
     createRoom: CreateRoomReducer,
     editRoom: EditRoomReducer,
+    deleteRoomModal: DeleteRoomModalReducer,
   },
 })

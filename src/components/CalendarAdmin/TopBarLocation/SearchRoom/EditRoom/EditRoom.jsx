@@ -2,9 +2,16 @@ import React from 'react'
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
 import ModeEditIcon from '@mui/icons-material/ModeEdit'
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'
+import { useDispatch } from 'react-redux'
 import s from './EditRoom.module.css'
+import { deleteRoomModal } from '../../../../../store/DeleteRoomModalSlice'
 
 export default function EditUser() {
+  const dispatch = useDispatch()
+  const openDeleteRoomModalFunc = () => {
+    dispatch(deleteRoomModal())
+  }
+
   return (
     <div className={s.wrapper}>
       <div className={s.position}>
@@ -32,7 +39,7 @@ export default function EditUser() {
           Сохранить
         </button>
         <ModeEditIcon className={s.icon} color="disabled" />
-        <DeleteOutlineIcon className={s.icon} color="primary" />
+        <DeleteOutlineIcon className={s.icon} color="primary" onClick={openDeleteRoomModalFunc} />
         <VisibilityOffIcon className={s.icon} color="primary" />
       </div>
     </div>

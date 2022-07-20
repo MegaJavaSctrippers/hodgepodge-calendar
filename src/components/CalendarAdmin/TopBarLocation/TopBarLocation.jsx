@@ -13,11 +13,13 @@ import { refreshCreateRoom } from '../../../store/CreateRoomSlice'
 import CreateRoom from './CreateRoom/CreateRoom'
 import EditRoom from './SearchRoom/EditRoom/EditRoom'
 import { refreshEditRoom } from '../../../store/EditRoomSlice'
+import DeleteRoomModal from './SearchRoom/DeleteRoomModal/DeleteRoomModal'
 
 export default function TopBarLocation() {
   const openSearchRoom = useSelector((state) => state.searchRoom.searchRoom)
   const openCreateRoom = useSelector((state) => state.createRoom.createRoom)
   const openEditRoom = useSelector((state) => state.editRoom.editRoom)
+  const openDeleteRoomModal = useSelector((state) => state.deleteRoomModal.deleteRoomModal)
 
   const dispatch = useDispatch()
 
@@ -48,6 +50,7 @@ export default function TopBarLocation() {
         {openSearchRoom && <SearchRoom />}
         {openCreateRoom && <CreateRoom />}
         {openEditRoom && <EditRoom />}
+        {openDeleteRoomModal && <DeleteRoomModal />}
       </div>
     </div>
   )
