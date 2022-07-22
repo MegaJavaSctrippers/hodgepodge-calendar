@@ -33,7 +33,7 @@ export default function Repeat() {
           setOpen(true)
         }}
       />
-      {value.id === repeatList[repeatList.length - 1].id && open && <EventRepeat close={close} />}
+      {value?.id === repeatList[repeatList.length - 1]?.id && open && <EventRepeat close={close} />}
     </div>
   )
 }
