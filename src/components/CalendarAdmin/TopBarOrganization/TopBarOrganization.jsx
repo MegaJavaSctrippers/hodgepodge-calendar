@@ -18,7 +18,10 @@ import DeletePositionModal from './DeletePositionModal/DeletePositionModal'
 import SearchDepartment from './SearchDepartment/SearchDepartment'
 import DeleteDepartmentModal from './DeleteDepartmentModal/DeleteDepartmentModal'
 import DeletefullDepartmentNotification from './DeletefullDepartmentNotification/DeletefullDepartmentNotification'
+import RelocateDepartmentNotification from './RelocateDepartmentNotification/RelocateDepartmentNotification'
 import { closeDeletefullDepNotification } from '../../../store/DeletefullDepNotificationSlice'
+import RelocateModal from './RelocateModal/RelocateModal'
+import { closeRelocateDepNotification } from '../../../store/RelocateDepNotificationSlice'
 
 export default function TopBarOrganization() {
   const search = useSelector((state) => state.searchPosition.searchPosition)
@@ -31,6 +34,10 @@ export default function TopBarOrganization() {
   const deletePositionModal = useSelector((state) => state.deletePositionModal.deletePositionModal)
   const deleteDepartmentModal = useSelector(
     (state) => state.deleteDepartmentModal.deleteDepartmentModal,
+  )
+  const openRelocateModal = useSelector((state) => state.relocateModal.relocateModal)
+  const relocateDepNotification = useSelector(
+    (state) => state.relocateDepNotification.relocateDepNotification,
   )
 
   const dispatch = useDispatch()
@@ -49,6 +56,7 @@ export default function TopBarOrganization() {
     dispatch(refreshCreate())
     dispatch(refreshEdit())
     dispatch(closeDeletefullDepNotification())
+    dispatch(closeRelocateDepNotification())
   }
 
   return (
@@ -76,6 +84,8 @@ export default function TopBarOrganization() {
         {deletePositionModal && <DeletePositionModal />}
         {deleteDepartmentModal && <DeleteDepartmentModal />}
         {deletefullDepNotification && <DeletefullDepartmentNotification />}
+        {openRelocateModal && <RelocateModal />}
+        {relocateDepNotification && <RelocateDepartmentNotification />}
       </div>
     </div>
   )

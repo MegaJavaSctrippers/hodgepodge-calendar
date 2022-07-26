@@ -9,17 +9,13 @@ import s from './DeleteDepartmentModal.module.css'
 import { closeDeleteDepartmentModal } from '../../../../store/DeleteDepartmentModalSlice'
 import { deletefullDepNotification } from '../../../../store/DeletefullDepNotificationSlice'
 import { refreshSearchDepartment } from '../../../../store/SearchDepartmentSlice'
+import { openRelocateModal } from '../../../../store/RelocateModalSlice'
 
 export default function DeleteDepartmentModal() {
   const dispatch = useDispatch()
-  const deletefullDepFunc = () => {
-    dispatch(deletefullDepNotification())
-    dispatch(closeDeleteDepartmentModal())
-    dispatch(refreshSearchDepartment())
-  }
-
   const [relocate, setRelocate] = useState(false)
   const [deletefull, setDeletefull] = useState(false)
+
   const relocateMethod = () => {
     setRelocate(!relocate)
   }
@@ -29,6 +25,17 @@ export default function DeleteDepartmentModal() {
 
   const closeModal = () => {
     dispatch(closeDeleteDepartmentModal())
+  }
+
+  const deleteDepartment = () => {
+    dispatch(closeDeleteDepartmentModal())
+    if (deletefull) {
+      dispatch(deletefullDepNotification())
+      dispatch(refreshSearchDepartment())
+    }
+    if (relocate) {
+      dispatch(openRelocateModal())
+    }
   }
 
   return (
@@ -52,7 +59,7 @@ export default function DeleteDepartmentModal() {
           <button
             className={classNames(s.btn, { [s.active]: relocate }, { [s.active]: deletefull })}
             type="button"
-            onClick={deletefullDepFunc}
+            onClick={deleteDepartment}
           >
             Удалить
           </button>
