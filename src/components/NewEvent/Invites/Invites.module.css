@@ -60,13 +60,28 @@
     margin-bottom: 20px;
 }
 
+.input:focus {
+    border: 1px solid rgba(46, 46, 46, 0.4);
+}
+
+.search_wrapper {
+    position: relative;
+}
 .search {
     position: absolute;
-    width: 16px;
-    height: 16px;
-    left: 40px;
-    top: 70px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.3;
+    left: 10px;
+    top: 10px;
+}
+
+.close_search {
+    position: absolute;
+    opacity: 0.3;
     cursor: pointer;
+    right: 10px;
+    top: 10px;
 }
 
 .invite_wrapper {
